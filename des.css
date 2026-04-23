@@ -1,0 +1,115 @@
+:root {
+  --diner-red: #e0563b;
+  --vintage-cream: #f4ecd8;
+  --dark-roast: #3b2818;
+  --teal: #538d7f;
+  --mustard: #f39c12;
+}
+
+body {
+  background-color: #2d3436;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Courier Prime', monospace;
+}
+
+/* Retro Paper Container */
+.retro-paper {
+  background: var(--vintage-cream);
+  background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
+  border: 5px double var(--dark-roast);
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 15px 15px 0px var(--diner-red);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: 'Rye', cursive;
+  color: var(--diner-red);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin: 0;
+}
+
+.divider {
+  height: 6px;
+  border-top: 2px solid var(--dark-roast);
+  border-bottom: 1px solid var(--dark-roast);
+  margin: 10px auto;
+  width: 80%;
+}
+
+header p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.menu-card {
+  border: 3px solid var(--dark-roast);
+  background: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 6px 6px 0px var(--teal);
+  position: relative;
+}
+
+.menu-card h3 {
+  font-family: 'Rye', cursive;
+  margin: 15px 0 5px 0;
+  color: var(--dark-roast);
+}
+
+/* 3D Viewer Styling */
+model-viewer {
+  width: 100%;
+  height: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+/* AR View Button */
+.ar-btn {
+  background: var(--mustard);
+  color: var(--dark-roast);
+  border: 2px solid var(--dark-roast);
+  padding: 10px;
+  width: 90%;
+  font-weight: bold;
+  font-family: 'Courier Prime', monospace;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  box-shadow: 3px 3px 0px var(--dark-roast);
+}
+
+/* Floating "Order Now" Button in AR Space */
+.hotspot-order {
+  background: var(--diner-red);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-family: 'Courier Prime', monospace;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.price-tag {
+  color: var(--diner-red);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
