@@ -2,33 +2,32 @@ const cafeMenu = [
   {
     name: "Classic Coffee",
     price: "$3.50",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600",
     modelGlb: "https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/CoffeeCup/glTF/CoffeeCup.gltf"
   },
   {
     name: "BigBoss Pancho Pizza",
     price: "$15.00",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80",
-    // YOUR PIZZA MODEL (CONVERTED TO RAW)
-    modelGlb: "https://raw.githubusercontent.com/dhruvvishwakarma1230-glitch/pizza/08a097eba51e00bc9a4e697d248acf0b79c56c36/pizza_bigboss_pancho.glb"
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600",
+    // Uses the local file you uploaded to GitHub
+    modelGlb: "pizza_bigboss_pancho.glb" 
   },
   {
     name: "Diner Club Sandwich",
     price: "$8.99",
-    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600",
     modelGlb: "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF-Binary/Avocado.glb"
   },
   {
     name: "The Worker's Combo",
     price: "$11.50",
-    image: "https://images.unsplash.com/photo-1619860860774-1e2e17343432?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1619860860774-1e2e17343432?w=600",
     modelGlb: "https://modelviewer.dev/shared-assets/models/glTF-Sample-Assets/Models/CoffeeCup/glTF/CoffeeCup.gltf"
   }
 ];
 
 const container = document.getElementById('menu-container');
 
-// Render Menu
 cafeMenu.forEach(item => {
   const card = document.createElement('div');
   card.className = 'menu-card';
