@@ -13,7 +13,6 @@ body {
   font-family: 'Courier Prime', monospace;
 }
 
-/* Retro Paper Container */
 .retro-paper {
   background: var(--vintage-cream);
   background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
@@ -44,12 +43,6 @@ h1 {
   width: 80%;
 }
 
-header p {
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Menu Grid */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -65,21 +58,12 @@ header p {
   position: relative;
 }
 
-.menu-card h3 {
-  font-family: 'Rye', cursive;
-  margin: 15px 0 5px 0;
-  color: var(--dark-roast);
-}
-
-/* 3D Viewer Styling */
 model-viewer {
   width: 100%;
   height: 250px;
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
 }
 
-/* AR View Button */
 .ar-btn {
   background: var(--mustard);
   color: var(--dark-roast);
@@ -87,7 +71,6 @@ model-viewer {
   padding: 10px;
   width: 90%;
   font-weight: bold;
-  font-family: 'Courier Prime', monospace;
   cursor: pointer;
   position: absolute;
   bottom: 20px;
@@ -95,7 +78,6 @@ model-viewer {
   box-shadow: 3px 3px 0px var(--dark-roast);
 }
 
-/* Floating "Order Now" Button in AR Space */
 .hotspot-order {
   background: var(--diner-red);
   color: white;
@@ -105,11 +87,11 @@ model-viewer {
   font-family: 'Courier Prime', monospace;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .price-tag {
   color: var(--diner-red);
   font-weight: bold;
   font-size: 1.2rem;
+  margin-top: 10px;
 }
